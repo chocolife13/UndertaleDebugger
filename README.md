@@ -23,7 +23,7 @@ Undertale debugeur est un petit exécutable utile qui **active le "debug mode"**
 EAPLI vérifie la version du fichier `UNDERTALE.exe` via ses métadonnées. Si la version correspond à `1.001`, il modifie la variable de "debugmode" dans "data.win"
 ## ⚠️ Avertissement
 
+Faite une sauvegarde de votre data.win
 Ce projet est **non-officiel** et **n'est pas affilié à Toby Fox**. À utiliser à des fins éducatives, de tests ou de fun uniquement.
 
-## 📁 Structure du projet
 
