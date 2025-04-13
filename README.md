@@ -6,7 +6,8 @@
 ❌ Toute autre version sera automatiquement refusée.  
 🛑 Si vous n’êtes pas sûr de votre version, ne l’utilisez pas sans vérifier !
 
-
+<br>
+<br>
 
 ## ⚙️ Fonctionnalités
 
@@ -15,21 +16,22 @@
 - 🧠 Léger, rapide, sans prise de tête
 - 🔐 modifie que le fichier `data.win` 
 
-
-
+<br>
+<br>
+  
 ## 🔍 Comment ça marche ?
 
 `UndertaleDebugeur` analyse les métadonnées de `data.win`.  
 Si la version est **exactement 1.001**, il modifie la variable `debugmode` dans le fichier **data.win** pour activer le mode debug.
 
-
-
+<br>
+<br>
 ## ⚠️ Avertissements importants
 
 - 📂 **Sauvegardez votre fichier `data.win` avant utilisation !**
 - 🧪 Utilisation à des fins de test ou d'exploration uniquement.
 - 🎮 Ce projet est **non-officiel** et **n’est pas affilié à Toby Fox**.
-
-
-
+<br>
+<br>
+<br>
 Made with ❤️ love.
