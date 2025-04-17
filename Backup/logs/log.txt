@@ -1,0 +1,22 @@
+===============================
+   UNDERTALE DEBUG TOOL v0.3
+===============================
+Initialization
+    
+- ✅ Undertale.exe found
+- ✅ data.win found
+===============================
+Backup
+    
+- ✅ Backup folder found
+- ✅ Backup data.win found
+===============================
+Information
+    
+- 📁 Undertale from : C:\Users\Lenny\Documents\GitHub\UndertaleDebugger
+- ✅ UNDERTALE.exe v1.001
+===============================
+DebugMode
+    
+- 🟢 Debug Mode is On
+Bruh
