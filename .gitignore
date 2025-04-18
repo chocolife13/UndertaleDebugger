@@ -1,3 +1,11 @@
 *.txt
 build/
 dist/
+/build
+/build
+/build/main
+build/main/EXE-00.toc
+*.toc
+*.pkg
+*.txt
+*.exe
