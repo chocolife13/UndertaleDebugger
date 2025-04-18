@@ -49,7 +49,7 @@ log_file.close()
 
 
 log("""===============================
-   UNDERTALE DEBUG TOOL v0.3""")
+   UNDERTALE DEBUG TOOL v1.0""")
 log_file = open(os.path.join("Backup","logs","log.txt"), "a+", encoding="utf-8")
 log_file.write(f"   {datetime.datetime.now()}\n")
 log_file.close()
