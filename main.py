@@ -1,22 +1,26 @@
 import win32api
+import datetime
 import time
 import os
-
 
 
 os.system('cls')
 
 
-
-
-
-logfile = open(os.path.join("Backup","logs","log.txt"), "w", encoding="utf-8")
-
 def log(text):
+    
+    log_file = open(os.path.join("Backup","logs","log.txt"), "a+", encoding="utf-8")
+    log_file.write(f"{text}\n")
+    log_file.close()
     print(text)
-    logfile.write(text + "\n")
+    
 
 
+
+
+def exit():
+    
+    os.system('pause')
 
 
 
@@ -32,42 +36,18 @@ UNDERTALE_missing = not os.path.exists(r'UNDERTALE.exe')
 
 
 
+log_file = open(os.path.join("Backup","logs","log.txt"), "a+", encoding="utf-8")
+log_file.write(f"###############################################################################################\n")
+log_file.close()
+
 
 
 log("""===============================
-   UNDERTALE DEBUG TOOL v0.3
-===============================""")
-
-
-
-log("""Initialization
-    """)
-
-
-if UNDERTALE_missing:
-    log("❌ UNDERTALE.exe is missing !")
-    log("🤣 Are you sure you put this .exe in your undertale folder ??????")
-    os.system('pause')
-else:
-    log("- ✅ Undertale.exe found")
-    exe_info = win32api.GetFileVersionInfo(path + r"\UNDERTALE.exe", "\\")
-    version = f"{exe_info['FileVersionMS'] >> 16}.{exe_info['FileVersionMS'] & 0xFFFF}.{exe_info['FileVersionLS'] >> 16}.{exe_info['FileVersionLS'] & 0xFFFF}"
-
-
-if data_missing:
-    log("❌ data.win is missing !")
-    log("🤣 Are you sure you put this .exe in your undertale folder ??????")
-    os.system('pause')
-else:
-    log("- ✅ data.win found")
-
-log("===============================")
-
-
-
-
-
-
+   UNDERTALE DEBUG TOOL v0.3""")
+log_file = open(os.path.join("Backup","logs","log.txt"), "a+", encoding="utf-8")
+log_file.write(f"   {datetime.datetime.now()}\n")
+log_file.close()
+log("""===============================""")
 
 
 
@@ -92,7 +72,7 @@ else:
         log("- ✅ Backup was created")
     else:
         log("❌ Error !")
-        os.system('pause')
+        exit()
 
 
 
@@ -122,13 +102,50 @@ else:
         log("- ✅ Backup data.win was created")
     else:
         log("❌ Error !")
-        os.system('pause')
-
-
-
-
+        exit()
 
 log("===============================")
+
+
+
+
+
+
+
+log("""Initialization
+    """)
+
+
+if UNDERTALE_missing:
+    log("❌ UNDERTALE.exe is missing !")
+    log("🤣 Are you sure you put this .exe in your undertale folder ??????")
+    exit()
+else:
+    log("- ✅ Undertale.exe found")
+    exe_info = win32api.GetFileVersionInfo(path + r"\UNDERTALE.exe", "\\")
+    version = f"{exe_info['FileVersionMS'] >> 16}.{exe_info['FileVersionMS'] & 0xFFFF}.{exe_info['FileVersionLS'] >> 16}.{exe_info['FileVersionLS'] & 0xFFFF}"
+
+
+if data_missing:
+    log("❌ data.win is missing !")
+    log("🤣 Are you sure you put this .exe in your undertale folder ??????")
+    exit()
+else:
+    log("- ✅ data.win found")
+
+log("===============================")
+
+
+
+
+
+
+
+
+
+
+
+
 
 log("""Information
     """)
@@ -220,12 +237,12 @@ with open(path + r"\data.win", "rb+") as data:
    
 
     
-os.system('pause')
+exit()
 
 
 
 
-logfile.close()
+
 
 
 
