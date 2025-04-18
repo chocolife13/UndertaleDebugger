@@ -22,3 +22,123 @@ Information
 DebugMode
     
 - 🟢 Debug Mode is On
+- 👋 Exiting from the user
+###############################################################################################
+===============================
+   UNDERTALE DEBUG TOOL v0.3
+   2025-04-18 12:12:59.458330
+===============================
+Backup
+    
+- ✅ Backup folder found
+- ✅ Backup data.win found
+===============================
+Initialization
+    
+- ✅ Undertale.exe found
+- ✅ data.win found
+===============================
+Information
+    
+- 📁 Undertale from : C:\Users\Lenny\Documents\GitHub\UndertaleDebugger
+- ✅ UNDERTALE.exe v1.001
+===============================
+DebugMode
+    
+- 🟢 Debug Mode is On
+- 👋 Exiting from the user
+###############################################################################################
+===============================
+   UNDERTALE DEBUG TOOL v0.3
+   2025-04-18 12:13:17.393260
+===============================
+Backup
+    
+- ✅ Backup folder found
+- ✅ Backup data.win found
+===============================
+Initialization
+    
+- ✅ Undertale.exe found
+- ✅ data.win found
+===============================
+Information
+    
+- 📁 Undertale from : C:\Users\Lenny\Documents\GitHub\UndertaleDebugger
+- ✅ UNDERTALE.exe v1.001
+===============================
+DebugMode
+    
+- 🟢 Debug Mode is On
+###############################################################################################
+===============================
+   UNDERTALE DEBUG TOOL v0.3
+   2025-04-18 12:13:40.228683
+===============================
+Backup
+    
+- ✅ Backup folder found
+- ✅ Backup data.win found
+===============================
+Initialization
+    
+- ✅ Undertale.exe found
+- ✅ data.win found
+===============================
+Information
+    
+- 📁 Undertale from : C:\Users\Lenny\Documents\GitHub\UndertaleDebugger
+- ✅ UNDERTALE.exe v1.001
+===============================
+DebugMode
+    
+- 🟢 Debug Mode is On
+- ⏳ Applying changes to the game
+- ⏳ Verification
+- ✅ The game has been successfully modified.
+###############################################################################################
+===============================
+   UNDERTALE DEBUG TOOL v0.3
+   2025-04-18 12:24:19.010341
+===============================
+Backup
+    
+- ✅ Backup folder found
+- ✅ Backup data.win found
+===============================
+Initialization
+    
+- ✅ Undertale.exe found
+- ✅ data.win found
+===============================
+Information
+    
+- 📁 Undertale from : C:\Users\Lenny\Documents\GitHub\UndertaleDebugger
+- ✅ UNDERTALE.exe v1.001
+===============================
+DebugMode
+    
+- 🔴 Debug Mode is Off
+###############################################################################################
+===============================
+   UNDERTALE DEBUG TOOL v0.3
+   2025-04-18 12:25:10.524733
+===============================
+Backup
+    
+- ✅ Backup folder found
+- ✅ Backup data.win found
+===============================
+Initialization
+    
+- ✅ Undertale.exe found
+- ✅ data.win found
+===============================
+Information
+    
+- 📁 Undertale from : C:\Users\Lenny\Documents\GitHub\UndertaleDebugger
+- ✅ UNDERTALE.exe v1.001
+===============================
+DebugMode
+    
+- 🔴 Debug Mode is Off

@@ -6,6 +6,12 @@ import os
 
 os.system('cls')
 
+os.makedirs("Backup/logs", exist_ok=True)
+if not os.path.exists(r'Backup\\logs\\log.txt'):
+    log_file = open(os.path.join("Backup","logs","log.txt"), "w", encoding="utf-8")
+    log_file.write(f"Création du fichier log.txt {datetime.datetime.now()} ")
+    log_file.close()  
+
 
 def log(text):
     
@@ -51,67 +57,6 @@ log("""===============================""")
 
 
 
-
-
-log("""Backup
-    """)
-
-if os.path.exists(r'Backup\\Data'):
-    log("- ✅ Backup folder found")
-else:
-    log("- ❌ Backup missing!")
-    log('- ⏳ Creation the folder Backup')
-    os.system('mkdir Backup\\data')
-    os.system('attrib +h Backup')
-    log("- ⏳ Verification")
-
-
-    time.sleep(1)
-
-    if os.path.exists(r'Backup\\Data'):
-        log("- ✅ Backup was created")
-    else:
-        log("❌ Error !")
-        exit()
-
-
-
-
-
-
-
-
-if os.path.exists(r'Backup\\Data\\data.win'):
-    log("- ✅ Backup data.win found")
-else:
-    log("- ⚠️  Backup data.win missing!")
-    log('- ⏳ Creation the data.win Backup')
-    os.system(f"copy {os.path.join(path, "data.win")} {os.path.join(path, "Backup", "data")} >nul")
-    log("- ⏳ Verification")
-
-
-
-
-    time.sleep(1)
-
-
-
-
-
-    if os.path.exists(r'Backup\\Data\\data.win'):
-        log("- ✅ Backup data.win was created")
-    else:
-        log("❌ Error !")
-        exit()
-
-log("===============================")
-
-
-
-
-
-
-
 log("""Initialization
     """)
 
@@ -135,6 +80,67 @@ else:
 
 log("===============================")
 
+log("""Backup
+    """)
+
+if os.path.exists(r'Backup\\data'):
+    log("- ✅ Backup folder found")
+else:
+    log("- ❌ Backup missing!")
+    log('- ⏳ Creation the folder Backup')
+    os.system('mkdir Backup\\data')
+    os.system('attrib +h Backup')
+    log("- ⏳ Verification")
+
+
+    time.sleep(1)
+
+    if os.path.exists(r'Backup\\data'):
+        log("- ✅ Backup was created")
+    else:
+        log("❌ Error !")
+        exit()
+
+
+
+
+
+
+
+
+if os.path.exists(r'Backup\\data\\data.win'):
+    log("- ✅ Backup data.win found")
+else:
+    log("- ⚠️  Backup data.win missing!")
+    log('- ⏳ Creation the data.win Backup')
+    os.system(f"copy {os.path.join(path, "data.win")} {os.path.join(path, "Backup", "data")} >nul")
+    log("- ⏳ Verification")
+
+
+
+
+    time.sleep(1)
+
+
+
+
+
+    if os.path.exists(r'Backup\\data\\data.win'):
+        log("- ✅ Backup data.win was created")
+    else:
+        log("❌ Error !")
+        exit()
+
+log("===============================")
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,7 +162,8 @@ log("- 📁 Undertale from : " + path)
 if version == "0.9.9.5":
     offset = 0x00725D8C
     log("- ✅ UNDERTALE.exe v1.001")
-
+else:
+    log("ur version is weird ok ok")
 
 
 
@@ -184,14 +191,17 @@ with open(path + r"\data.win", "rb+") as data:
     
         log("- 🔴 Debug Mode is Off")
         choixOff = input("Do you want to enable the DebugMode ? (y/n)")
-    else:
+    
+    elif debug_bit == b'\x01':
+        
         log("- 🟢 Debug Mode is On")
         choixOff = input("- ❓ Do you want to disable the DebugMode ? (y/n)")
         
+    else:
+        log("- ❌ Error version")
     
     
-    
-    if choixOff == "y":
+    if choixOff.lower() == "y":
         log("- ⏳ Applying changes to the game")
         
         
